@@ -1,0 +1,6 @@
+{
+  "name": "ResuQuest",
+  "description": "Interactive team quiz game on resume building with automated round timers, dynamic score tracking, visual resume construction, and tier-based rankings.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

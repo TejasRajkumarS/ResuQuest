@@ -1,0 +1,54 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Google Sans", "Google Sans Text", "Plus Jakarta Sans", system-ui, -apple-system, sans-serif;
+  --color-slate-gray: #004741;
+  --color-slate-gray-hover: #005d56;
+  --color-slate-gray-dark: #00332f;
+  --color-slate-gray-light: #00635b;
+  --color-slate-gray-50: #F0EDE4;
+  --color-cream: #F0EDE4;
+  --color-cream-dark: #e2dfd4;
+  --color-cream-card: #FAF8F3;
+}
+
+body {
+  font-family: "Google Sans", "Google Sans Text", "Plus Jakarta Sans", system-ui, -apple-system, sans-serif;
+  background-color: #F0EDE4;
+  color: #004741;
+}
+
+@keyframes streakPopGlow {
+  0% {
+    opacity: 0;
+    transform: scale(0.6) translateY(18px);
+    box-shadow: 0 0 0 0 rgba(245, 158, 11, 0);
+  }
+  14% {
+    opacity: 1;
+    transform: scale(1.06) translateY(-4px);
+    box-shadow: 0 0 25px 6px rgba(245, 158, 11, 0.75), 0 0 45px 12px rgba(251, 191, 36, 0.5);
+  }
+  22% {
+    transform: scale(0.97) translateY(2px);
+    box-shadow: 0 0 18px 4px rgba(245, 158, 11, 0.65);
+  }
+  28% {
+    transform: scale(1) translateY(0);
+    box-shadow: 0 0 20px 4px rgba(245, 158, 11, 0.6);
+  }
+  80% {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+    box-shadow: 0 0 16px 3px rgba(245, 158, 11, 0.5);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(0.92) translateY(-12px);
+    box-shadow: 0 0 0 0 rgba(245, 158, 11, 0);
+  }
+}
+
+.animate-streak-pop-glow {
+  animation: streakPopGlow 2.8s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
+}
