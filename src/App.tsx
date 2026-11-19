@@ -4,7 +4,6 @@ import { GameStage, GameSettings, Team, Question, AnswerRecord, ResumeItem } fro
 import { RESUME_QUESTIONS, shuffleQuestionOptions } from './data/questions';
 import { soundFx } from './utils/sound';
 
-import { IntroAnimation } from './components/IntroAnimation';
 import { GameSetup } from './components/GameSetup';
 import { ScoreBoard } from './components/ScoreBoard';
 import { QuestionCard } from './components/QuestionCard';
@@ -14,7 +13,7 @@ import { QuestionReviewModal } from './components/QuestionReviewModal';
 import { TurnTransitionOverlay } from './components/TurnTransitionOverlay';
 
 export default function App() {
-  const [stage, setStage] = useState<GameStage>('intro');
+  const [stage, setStage] = useState<GameStage>('setup');
   const [soundEnabled, setSoundEnabled] = useState<boolean>(true);
 
   // Settings & Game State

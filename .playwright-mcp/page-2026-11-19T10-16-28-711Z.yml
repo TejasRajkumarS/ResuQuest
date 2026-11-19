@@ -1,0 +1,7 @@
+- generic [ref=e5]:
+  - generic [ref=e10]: Interactive Career Quiz Battle
+  - generic [ref=e15]:
+    - heading "RESUQUEST" [level=1] [ref=e16]
+    - paragraph [ref=e17]: The Multi-Team Resume Quiz Championship
+  - paragraph [ref=e18]: Answer high-impact resume MCQs, unlock executive resume components, and compete to claim the ultimate S-Tier Resume Victory!
+  - button "Skip Intro →" [ref=e19] [cursor=pointer]

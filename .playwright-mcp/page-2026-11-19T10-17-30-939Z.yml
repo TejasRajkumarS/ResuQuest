@@ -1,0 +1,72 @@
+- generic [ref=e3]:
+  - generic [ref=e20]:
+    - generic [ref=e91]:
+      - generic [ref=e92]:
+        - generic [ref=e93]: Question 1 of 15
+        - generic [ref=e95]:
+          - button "Mute" [ref=e96] [cursor=pointer]
+          - button "Restart Game" [ref=e101] [cursor=pointer]
+      - generic [ref=e105]:
+        - generic "Click to inspect Team Alpha's Resume (0% unlocked)" [ref=e106] [cursor=pointer]:
+          - generic [ref=e107]: T
+          - generic [ref=e108]: Team Alpha
+          - generic [ref=e109]: "0"
+        - generic "Click to inspect Team Beta's Resume (0% unlocked)" [ref=e114] [cursor=pointer]:
+          - generic [ref=e115]: T
+          - generic [ref=e116]: Team Beta
+          - generic [ref=e117]: "0"
+    - main [ref=e21]:
+      - generic [ref=e122]:
+        - generic [ref=e123]:
+          - generic [ref=e124]:
+            - generic [ref=e125]: T
+            - generic [ref=e126]:
+              - generic [ref=e127]: Formatting & ATS
+              - heading "Team Alpha" [level=2] [ref=e128]
+          - generic [ref=e129]: 20s
+        - generic [ref=e134]:
+          - generic [ref=e135]:
+            - generic [ref=e136]:
+              - generic [ref=e137]: "Question #31"
+              - heading "What is an Applicant Tracking System (ATS) red flag that can prevent your resume from being read properly?" [level=3] [ref=e138]
+            - generic [ref=e139]:
+              - button "A Saving your document as a standard PDF or plain text file." [ref=e140] [cursor=pointer]:
+                - generic [ref=e141]:
+                  - generic [ref=e142]: A
+                  - generic [ref=e143]: Saving your document as a standard PDF or plain text file.
+              - button "B Placing vital information inside complex graphic text boxes or header/footer areas." [ref=e144] [cursor=pointer]:
+                - generic [ref=e145]:
+                  - generic [ref=e146]: B
+                  - generic [ref=e147]: Placing vital information inside complex graphic text boxes or header/footer areas.
+              - button "C Using standard clean bullet points and bulleted lists." [ref=e148] [cursor=pointer]:
+                - generic [ref=e149]:
+                  - generic [ref=e150]: C
+                  - generic [ref=e151]: Using standard clean bullet points and bulleted lists.
+              - button "D Using clear section headings like \"Work Experience\" and \"Education\"." [ref=e152] [cursor=pointer]:
+                - generic [ref=e153]:
+                  - generic [ref=e154]: D
+                  - generic [ref=e155]: Using clear section headings like "Work Experience" and "Education".
+          - generic [ref=e157]:
+            - generic [ref=e158]: 1-4
+            - generic [ref=e159]: or
+            - generic [ref=e160]: A-D
+            - generic [ref=e161]: to select
+  - generic [ref=e163] [cursor=pointer]:
+    - generic [ref=e166]: "Question #1 of 15 • Team 1 of 2"
+    - generic [ref=e170]: T
+    - generic [ref=e172]:
+      - generic [ref=e173]: UP NEXT TO PLAY
+      - heading "Team Alpha" [level=2] [ref=e177]
+    - generic [ref=e178]:
+      - generic [ref=e179]:
+        - generic [ref=e180]: Score
+        - generic [ref=e181]: "0"
+      - generic [ref=e188]:
+        - generic [ref=e189]: Streak
+        - generic [ref=e190]: 0x
+      - generic [ref=e193]:
+        - generic [ref=e194]: Unlocked
+        - generic [ref=e195]: "0"
+    - generic [ref=e196]:
+      - button "Start Turn Now" [ref=e197]
+      - paragraph [ref=e201]: Press Space or click anywhere to jump in

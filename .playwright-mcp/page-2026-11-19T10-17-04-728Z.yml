@@ -1,0 +1,47 @@
+- main [ref=e21]:
+  - generic [ref=e22]:
+    - generic [ref=e23]:
+      - heading "ResuQuest" [level=1] [ref=e24]
+      - paragraph [ref=e25]: Configure participating teams and round settings to begin.
+    - generic [ref=e26]:
+      - generic [ref=e27]:
+        - generic [ref=e28]:
+          - generic [ref=e29]: Participating Teams
+          - button "Randomize" [ref=e36] [cursor=pointer]
+        - generic [ref=e43]:
+          - button "2 Teams" [ref=e44] [cursor=pointer]
+          - button "3 Teams" [ref=e45] [cursor=pointer]
+          - button "4 Teams" [ref=e46] [cursor=pointer]
+          - button "5 Teams" [ref=e47] [cursor=pointer]
+        - generic [ref=e48]:
+          - generic [ref=e49]:
+            - generic [ref=e50]: Team 1
+            - textbox "Team 1..." [ref=e51]: Team Alpha
+          - generic [ref=e52]:
+            - generic [ref=e53]: Team 2
+            - textbox "Team 2..." [ref=e54]: Team Beta
+      - separator [ref=e55]
+      - generic [ref=e56]:
+        - generic [ref=e57]:
+          - generic [ref=e58]: Timer / Question
+          - generic [ref=e63]:
+            - button "15s" [ref=e64] [cursor=pointer]
+            - button "20s" [ref=e65] [cursor=pointer]
+            - button "30s" [ref=e66] [cursor=pointer]
+            - button "No Limit" [ref=e67] [cursor=pointer]
+        - generic [ref=e68]:
+          - generic [ref=e69]: Total Questions
+          - generic [ref=e74]:
+            - button "10 Qs" [ref=e75] [cursor=pointer]
+            - button "15 Qs" [ref=e76] [cursor=pointer]
+            - button "20 Qs" [ref=e77] [cursor=pointer]
+      - generic [ref=e78]:
+        - generic [ref=e79]: Interaction Mode
+        - generic [ref=e80]:
+          - generic [ref=e81] [cursor=pointer]:
+            - generic [ref=e82]: Turn-Based Hotseat
+            - text: Teams answer in alternating turns.
+          - generic [ref=e83] [cursor=pointer]:
+            - generic [ref=e84]: All-Teams Lock In
+            - text: Simultaneous answer lock in per round.
+      - button "Start Game" [ref=e86] [cursor=pointer]
