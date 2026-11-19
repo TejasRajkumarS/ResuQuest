@@ -1,0 +1,63 @@
+- generic [ref=f4e4]:
+  - banner [ref=f4e123]:
+    - generic [ref=f4e124]:
+      - generic [ref=f4e125]:
+        - generic [ref=f4e126]:
+          - generic [ref=f4e127]: RQ
+          - generic [ref=f4e128]:
+            - paragraph [ref=f4e129]: ResuQuest
+            - paragraph [ref=f4e130]: Round 1 of 15
+        - generic [ref=f4e131]:
+          - button "Turn sound off" [ref=f4e132] [cursor=pointer]
+          - button "End game and return to setup" [ref=f4e137] [cursor=pointer]
+      - generic [ref=f4e141]:
+        - button "View Career Craft's resume draft. Score 0." [ref=f4e142]:
+          - generic [aria-hidden] [ref=f4e143]: C
+          - generic [ref=f4e144]: Career Craft
+          - generic [ref=f4e145]: "0"
+        - button "View Resume Mavericks's resume draft. Score 0." [ref=f4e149]:
+          - generic [aria-hidden] [ref=f4e150]: R
+          - generic [ref=f4e151]: Resume Mavericks
+          - generic [ref=f4e152]: "0"
+  - main [ref=f4e5]:
+    - generic [ref=f4e157]:
+      - generic [ref=f4e158]:
+        - generic [ref=f4e159]:
+          - generic [ref=f4e160]: C
+          - generic [ref=f4e161]:
+            - paragraph [ref=f4e162]: Career Craft
+            - paragraph [ref=f4e163]: Structure & Summary
+        - timer [ref=f4e164]:
+          - generic [ref=f4e168]: 0 seconds left
+      - generic [ref=f4e171]:
+        - generic [ref=f4e172]:
+          - paragraph [ref=f4e173]: Round 1 of 15
+          - heading "How should senior executives (15+ years experience) structure older career history (10+ years ago)?" [level=1] [ref=f4e174]
+        - generic [ref=f4e175]:
+          - group "Answer choices" [ref=f4e176]:
+            - generic [ref=f4e178]:
+              - button "List every single minor task from 25 years ago in full 10-bullet detail." [disabled] [ref=f4e179]:
+                - generic [aria-hidden] [ref=f4e180]: A
+              - button "Falsify dates to make career look shorter." [disabled] [ref=f4e182]:
+                - generic [aria-hidden] [ref=f4e183]: B
+              - button "Summarize older roles in a concise \"Early Career Experience\" section with job title, company, and dates without lengthy bullets." [disabled] [ref=f4e185]:
+                - generic [aria-hidden] [ref=f4e186]: C
+              - button "Delete all mention of early career." [disabled] [ref=f4e188]:
+                - generic [aria-hidden] [ref=f4e189]: D
+          - generic [ref=f4e213]:
+            - generic [ref=f4e214]:
+              - generic [ref=f4e218]:
+                - heading "Time expired" [level=2] [ref=f4e219]
+                - paragraph [ref=f4e220]: No points were added. Review the correct answer before continuing.
+              - generic [ref=f4e221]: +0 pts
+            - generic [ref=f4e222]:
+              - paragraph [ref=f4e223]: Correct answer
+              - generic [ref=f4e224]:
+                - generic [ref=f4e225]: C
+                - paragraph [ref=f4e226]: Summarize older roles in a concise "Early Career Experience" section with job title, company, and dates without lengthy bullets.
+            - generic [ref=f4e227]:
+              - paragraph [ref=f4e228]: Why this matters
+              - paragraph [ref=f4e229]: Summarizing early career roles saves high-value page real estate for recent high-impact leadership wins.
+            - generic [ref=f4e230]:
+              - paragraph [ref=f4e231]: Press Enter to continue
+              - button "Continue" [ref=f4e232] [cursor=pointer]

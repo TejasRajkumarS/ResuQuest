@@ -1,7 +1,6 @@
 import React from 'react';
-import { motion } from 'motion/react';
 import { Team } from '../types';
-import { Trophy, FileText, Volume2, VolumeX, RotateCcw } from 'lucide-react';
+import { FileText, RotateCcw, Trophy, Volume2, VolumeX } from 'lucide-react';
 
 interface ScoreBoardProps {
   teams: Team[];
@@ -24,105 +23,105 @@ export const ScoreBoard: React.FC<ScoreBoardProps> = ({
   onToggleSound,
   onRestart,
 }) => {
-  const rankedTeamIds = [...teams]
-    .sort((a, b) => b.score - a.score)
-    .map(t => t.id);
+  const rankedTeamIds = [...teams].sort((a, b) => b.score - a.score).map((team) => team.id);
 
   return (
-    <div className="w-full bg-cream-card/90 backdrop-blur-md border-b border-slate-gray/15 sticky top-0 z-30">
-      <div className="max-w-5xl mx-auto px-4 py-3 flex items-center justify-between gap-4">
-        
-        {/* Left: Round Counter */}
-        <div className="flex items-center gap-3 shrink-0">
-          <div className="text-xs font-semibold tracking-wider text-slate-gray-dark uppercase">
-            Question <span className="font-black text-slate-900">{currentQuestionIndex + 1}</span> of {totalQuestions}
+    <header className="sticky top-0 z-30 border-b border-line bg-paper-raised">
+      <div className="mx-auto flex max-w-6xl flex-col gap-3 px-4 py-3 sm:px-6 lg:flex-row lg:items-center lg:justify-between lg:gap-6 lg:px-8">
+        <div className="flex min-w-0 items-center justify-between gap-4 lg:justify-start">
+          <div className="flex items-center gap-3">
+            <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-[9px] bg-brand-800 text-xs font-black tracking-tight text-white">
+              RQ
+            </span>
+            <div className="min-w-0">
+              <p className="truncate text-sm font-extrabold tracking-[-0.01em] text-brand-900">ResuQuest</p>
+              <p className="tabular-nums mt-0.5 text-[0.68rem] font-bold uppercase tracking-[0.09em] text-ink-soft">
+                Round {currentQuestionIndex + 1} of {totalQuestions}
+              </p>
+            </div>
           </div>
 
-          <div className="h-4 w-px bg-slate-gray/20" />
-
-          <div className="flex items-center gap-1">
+          <div className="flex items-center gap-1 lg:hidden">
             <button
+              type="button"
               onClick={onToggleSound}
-              title={soundEnabled ? 'Mute' : 'Sound On'}
-              className="p-1.5 rounded-lg text-slate-600 hover:text-slate-900 hover:bg-cream-dark/50 transition-colors cursor-pointer"
+              className="rq-icon-button !h-9 !w-9"
+              aria-label={soundEnabled ? 'Turn sound off' : 'Turn sound on'}
+              title={soundEnabled ? 'Turn sound off' : 'Turn sound on'}
             >
-              {soundEnabled ? <Volume2 className="w-4 h-4 text-slate-gray-dark" /> : <VolumeX className="w-4 h-4 text-slate-400" />}
+              {soundEnabled ? <Volume2 className="h-4 w-4" aria-hidden="true" /> : <VolumeX className="h-4 w-4" aria-hidden="true" />}
             </button>
-
             <button
+              type="button"
               onClick={onRestart}
-              title="Restart Game"
-              className="p-1.5 rounded-lg text-slate-600 hover:text-slate-900 hover:bg-cream-dark/50 transition-colors cursor-pointer"
+              className="rq-icon-button !h-9 !w-9"
+              aria-label="End game and return to setup"
+              title="End game"
             >
-              <RotateCcw className="w-4 h-4 text-slate-600" />
+              <RotateCcw className="h-4 w-4" aria-hidden="true" />
             </button>
           </div>
         </div>
 
-        {/* Right: Minimal Team Score Chips */}
-        <div className="flex items-center gap-2 overflow-x-auto py-0.5">
+        <div className="no-scrollbar -mx-1 flex items-center gap-2 overflow-x-auto px-1 pb-1 lg:mx-0 lg:flex-1 lg:justify-center lg:overflow-visible lg:pb-0" role="list">
           {teams.map((team) => {
             const isActive = team.id === activeTeamId;
             const rank = rankedTeamIds.indexOf(team.id) + 1;
             const isLeader = rank === 1 && team.score > 0;
-            const unlockedCount = team.unlockedResumeItems.length;
-            const progressPercent = Math.min(
-              100,
-              Math.round((unlockedCount / totalQuestions) * 100)
-            );
 
             return (
-              <motion.div
+              <button
                 key={team.id}
-                layout
-                className={`flex items-center gap-2.5 px-3 py-1.5 rounded-xl border text-xs transition-all cursor-pointer ${
-                  isActive
-                    ? 'bg-slate-gray text-white border-slate-gray-dark shadow-xs'
-                    : 'bg-white text-slate-800 border-slate-gray/20 hover:border-slate-gray/40'
-                }`}
+                type="button"
                 onClick={() => onOpenResumePreview(team.id)}
-                title={`Click to inspect ${team.name}'s Resume (${progressPercent}% unlocked)`}
+                className={`flex min-h-11 shrink-0 items-center gap-2 rounded-[9px] border px-3 text-left transition-colors ${
+                  isActive
+                    ? 'border-brand-700 bg-brand-700 text-white'
+                    : 'border-line bg-white text-ink hover:border-brand-200 hover:bg-brand-50'
+                }`}
+                title={`View ${team.name}'s resume draft`}
+                aria-label={`View ${team.name}'s resume draft. Score ${team.score}.`}
               >
-                {/* Initial */}
-                <div
-                  className={`w-5 h-5 rounded-md flex items-center justify-center font-bold text-[10px] shrink-0 ${
-                    isActive ? 'bg-white/20 text-white' : 'bg-cream-dark text-slate-700'
+                <span
+                  className={`flex h-7 w-7 shrink-0 items-center justify-center rounded-[7px] text-[0.68rem] font-black ${
+                    isActive ? 'bg-white/15 text-white' : 'bg-paper-deep text-brand-800'
                   }`}
+                  aria-hidden="true"
                 >
                   {team.name.charAt(0).toUpperCase()}
-                </div>
-
-                {/* Team Name & Score */}
-                <span className="font-medium truncate max-w-[90px]">
-                  {team.name}
                 </span>
-
-                {isLeader && (
-                  <Trophy className="w-3 h-3 text-amber-300 fill-amber-300 shrink-0" />
-                )}
-
-                <span className={`font-black ${isActive ? 'text-amber-200' : 'text-slate-gray-dark'}`}>
+                <span className="max-w-[80px] truncate text-xs font-bold hidden sm:inline">{team.name}</span>
+                {isLeader && <Trophy className="h-3.5 w-3.5 shrink-0 text-[#d2a84d]" aria-label="Current leader" />}
+                <span className={`tabular-nums text-xs font-black ${isActive ? 'text-brand-100' : 'text-brand-700'}`}>
                   {team.score}
                 </span>
-
-                {/* Mini Progress Dot Bar */}
-                <div className={`w-8 h-1 rounded-full overflow-hidden shrink-0 ${
-                  isActive ? 'bg-white/20' : 'bg-cream-dark'
-                }`}>
-                  <div
-                    className="h-full bg-emerald-400 rounded-full"
-                    style={{ width: `${progressPercent}%` }}
-                  />
-                </div>
-
-                <FileText className={`w-3 h-3 shrink-0 opacity-60 hover:opacity-100 ${isActive ? 'text-white' : 'text-slate-500'}`} />
-              </motion.div>
+                <FileText className={`h-3.5 w-3.5 shrink-0 ${isActive ? 'text-white/65' : 'text-ink-soft/65'}`} aria-hidden="true" />
+              </button>
             );
           })}
         </div>
 
+        <div className="hidden items-center gap-1 lg:flex">
+          <button
+            type="button"
+            onClick={onToggleSound}
+            className="rq-icon-button"
+            aria-label={soundEnabled ? 'Turn sound off' : 'Turn sound on'}
+            title={soundEnabled ? 'Turn sound off' : 'Turn sound on'}
+          >
+            {soundEnabled ? <Volume2 className="h-5 w-5" aria-hidden="true" /> : <VolumeX className="h-5 w-5" aria-hidden="true" />}
+          </button>
+          <button
+            type="button"
+            onClick={onRestart}
+            className="rq-icon-button"
+            aria-label="End game and return to setup"
+            title="End game"
+          >
+            <RotateCcw className="h-5 w-5" aria-hidden="true" />
+          </button>
+        </div>
       </div>
-    </div>
+    </header>
   );
 };
-

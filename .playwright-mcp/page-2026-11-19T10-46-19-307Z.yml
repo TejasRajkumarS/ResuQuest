@@ -1,0 +1,59 @@
+- generic [ref=f4e3]:
+  - generic [ref=f4e4]:
+    - banner [ref=f4e123]:
+      - generic [ref=f4e124]:
+        - generic [ref=f4e125]:
+          - generic [ref=f4e126]:
+            - generic [ref=f4e127]: RQ
+            - generic [ref=f4e128]:
+              - paragraph [ref=f4e129]: ResuQuest
+              - paragraph [ref=f4e130]: Round 1 of 15
+          - generic [ref=f4e131]:
+            - button "Turn sound off" [ref=f4e132] [cursor=pointer]
+            - button "End game and return to setup" [ref=f4e137] [cursor=pointer]
+        - generic [ref=f4e141]:
+          - button "View Career Craft's resume draft. Score 0." [ref=f4e142]:
+            - generic [aria-hidden] [ref=f4e143]: C
+            - generic [ref=f4e144]: Career Craft
+            - generic [ref=f4e145]: "0"
+          - button "View Resume Mavericks's resume draft. Score 0." [ref=f4e149]:
+            - generic [aria-hidden] [ref=f4e150]: R
+            - generic [ref=f4e151]: Resume Mavericks
+            - generic [ref=f4e152]: "0"
+    - main [ref=f4e5]:
+      - generic [ref=f4e157]:
+        - generic [ref=f4e158]:
+          - generic [ref=f4e159]:
+            - generic [ref=f4e160]: C
+            - generic [ref=f4e161]:
+              - paragraph [ref=f4e162]: Career Craft
+              - paragraph [ref=f4e163]: Structure & Summary
+          - timer [ref=f4e164]:
+            - generic [ref=f4e168]: 19 seconds left
+        - generic [ref=f4e171]:
+          - generic [ref=f4e172]:
+            - paragraph [ref=f4e173]: Round 1 of 15
+            - heading "How should senior executives (15+ years experience) structure older career history (10+ years ago)?" [level=1] [ref=f4e174]
+          - group "Answer choices" [ref=f4e176]:
+            - generic [ref=f4e178]:
+              - button "List every single minor task from 25 years ago in full 10-bullet detail." [ref=f4e179]:
+                - generic [aria-hidden] [ref=f4e180]: A
+              - button "Falsify dates to make career look shorter." [ref=f4e182]:
+                - generic [aria-hidden] [ref=f4e183]: B
+              - button "Summarize older roles in a concise \"Early Career Experience\" section with job title, company, and dates without lengthy bullets." [ref=f4e185]:
+                - generic [aria-hidden] [ref=f4e186]: C
+              - button "Delete all mention of early career." [ref=f4e188]:
+                - generic [aria-hidden] [ref=f4e189]: D
+          - generic [ref=f4e191]: Use number keys or A–D to answer.
+  - dialog "Career Craft" [ref=f4e193]:
+    - generic [ref=f4e194]:
+      - generic [ref=f4e195]: Team 1 of 2
+      - paragraph [ref=f4e202]: Pass the screen to
+      - heading "Career Craft" [level=2] [ref=f4e203]
+      - paragraph [ref=f4e204]: Round 1 of 15 is ready. The timer starts when the next team begins.
+      - generic [ref=f4e205]:
+        - generic [ref=f4e206]:
+          - paragraph [ref=f4e207]: Current score
+          - paragraph [ref=f4e208]: 0 points
+        - button "Begin turn" [ref=f4e209] [cursor=pointer]
+      - paragraph [ref=f4e212]: Press Space or Enter to continue

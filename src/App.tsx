@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react';
-import { AnimatePresence } from 'motion/react';
 import { GameStage, GameSettings, Team, Question, AnswerRecord, ResumeItem } from './types';
 import { RESUME_QUESTIONS, shuffleQuestionOptions } from './data/questions';
 import { soundFx } from './utils/sound';
@@ -286,73 +285,59 @@ export default function App() {
   const allAssignedQuestions = Object.values(teamQuestionsMap).flat();
 
   return (
-    <div className="min-h-screen bg-cream font-sans text-slate-800 flex flex-col justify-between selection:bg-slate-gray selection:text-white">
-      
-      {/* Intro Animation Overlay */}
-      <AnimatePresence>
-        {stage === 'intro' && (
-          <IntroAnimation onComplete={() => setStage('setup')} />
+    <div className="min-h-screen bg-paper font-sans text-ink selection:bg-brand-200 selection:text-brand-900">
+      <div className="flex min-h-screen w-full flex-col">
+        {stage === 'playing' && (
+          <ScoreBoard
+            teams={teams}
+            activeTeamId={currentTeam?.id || ''}
+            currentQuestionIndex={currentQuestionIndex}
+            totalQuestions={settings.totalQuestions}
+            onOpenResumePreview={handleOpenResumePreview}
+            soundEnabled={soundEnabled}
+            onToggleSound={handleToggleSound}
+            onRestart={handleRestart}
+          />
         )}
-      </AnimatePresence>
 
-      {/* Main Container */}
-      {stage !== 'intro' && (
-        <div className="w-full flex-1 flex flex-col">
-          
-          {/* Active Game Scoreboard HUD */}
-          {stage === 'playing' && (
-            <ScoreBoard
-              teams={teams}
-              activeTeamId={currentTeam?.id || ''}
-              currentQuestionIndex={currentQuestionIndex}
-              totalQuestions={settings.totalQuestions}
-              onOpenResumePreview={handleOpenResumePreview}
-              soundEnabled={soundEnabled}
+        <main className="flex flex-1 flex-col items-center">
+          {stage === 'setup' && (
+            <GameSetup
+              onStartGame={handleStartGame}
+              defaultSound={soundEnabled}
               onToggleSound={handleToggleSound}
-              onRestart={handleRestart}
+              hasSavedSession={hasSavedSession}
+              onRestoreSession={handleRestoreSession}
+              onClearSession={handleClearSession}
             />
           )}
 
-          {/* Main Stage Content Router */}
-          <main className="flex-1 flex flex-col items-center justify-center">
-            {stage === 'setup' && (
-              <GameSetup
-                onStartGame={handleStartGame}
-                defaultSound={soundEnabled}
-                onToggleSound={handleToggleSound}
-                hasSavedSession={hasSavedSession}
-                onRestoreSession={handleRestoreSession}
-                onClearSession={handleClearSession}
-              />
-            )}
+          {stage === 'playing' && currentQuestion && currentTeam && (
+            <QuestionCard
+              question={currentQuestion}
+              currentTeam={currentTeam}
+              roundNumber={currentQuestionIndex + 1}
+              totalRounds={settings.totalQuestions}
+              timerDuration={settings.timerSeconds}
+              onAnswerSubmit={handleAnswerSubmit}
+              onNextQuestion={handleNextQuestion}
+              isRoundComplete={!!lastAnswerResult}
+              lastAnswerResult={lastAnswerResult}
+            />
+          )}
 
-            {stage === 'playing' && currentQuestion && currentTeam && (
-              <QuestionCard
-                question={currentQuestion}
-                currentTeam={currentTeam}
-                allTeams={teams}
-                gameMode={settings.gameMode}
-                timerDuration={settings.timerSeconds}
-                onAnswerSubmit={handleAnswerSubmit}
-                onNextQuestion={handleNextQuestion}
-                isRoundComplete={!!lastAnswerResult}
-                lastAnswerResult={lastAnswerResult}
-              />
-            )}
-
-            {stage === 'results' && (
-              <TierRankingResults
-                teams={teams}
-                answerRecords={answerRecords}
-                allQuestions={allAssignedQuestions}
-                onRestart={handleRestart}
-                onReviewQuestions={() => setIsReviewOpen(true)}
-                onOpenResumePreview={handleOpenResumePreview}
-              />
-            )}
-          </main>
-        </div>
-      )}
+          {stage === 'results' && (
+            <TierRankingResults
+              teams={teams}
+              answerRecords={answerRecords}
+              allQuestions={allAssignedQuestions}
+              onRestart={handleRestart}
+              onReviewQuestions={() => setIsReviewOpen(true)}
+              onOpenResumePreview={handleOpenResumePreview}
+            />
+          )}
+        </main>
+      </div>
 
       {/* Virtual Resume Modal */}
       <ResumePreviewModal
