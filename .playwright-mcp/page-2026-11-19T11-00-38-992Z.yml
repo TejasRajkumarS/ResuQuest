@@ -1,0 +1,57 @@
+- main [ref=f8e5]:
+  - generic [ref=f8e7]:
+    - complementary [ref=f8e8]:
+      - generic [ref=f8e9]:
+        - generic [ref=f8e16]:
+          - generic [ref=f8e17]: ResuQuest
+          - generic [ref=f8e18]: Resume skills tournament
+        - paragraph [ref=f8e19]: Learn it. Apply it.
+        - heading "Turn resume know-how into a team competition." [level=1] [ref=f8e20]
+        - paragraph [ref=f8e21]: Teams answer recruiter-focused questions, earn points, and build a practical resume playbook along the way.
+    - generic [ref=f8e22]:
+      - generic [ref=f8e23]:
+        - generic [ref=f8e24]:
+          - paragraph [ref=f8e25]: New session
+          - heading "Game setup" [level=2] [ref=f8e26]
+          - paragraph [ref=f8e27]: Name the teams and choose the pace. You can change these for every round.
+        - button "Turn sound off" [ref=f8e28] [cursor=pointer]
+      - generic [ref=f8e33]:
+        - region "Participating teams" [ref=f8e34]:
+          - generic [ref=f8e35]:
+            - generic [ref=f8e36]:
+              - heading "Participating teams" [level=3] [ref=f8e37]
+              - paragraph [ref=f8e38]: Choose the number of teams, then give each one a name.
+            - button "Randomize names" [ref=f8e39] [cursor=pointer]
+          - generic "Number of teams" [ref=f8e45]:
+            - button "2" [pressed] [ref=f8e46]
+            - button "3" [ref=f8e47]
+            - button "4" [ref=f8e48]
+            - button "5" [ref=f8e49]
+          - generic [ref=f8e50]:
+            - generic [ref=f8e51]:
+              - generic [ref=f8e52]: Team 1
+              - textbox "Team 1" [ref=f8e53]: Career Craft
+            - generic [ref=f8e54]:
+              - generic [ref=f8e55]: Team 2
+              - textbox "Team 2" [ref=f8e56]: Resume Mavericks
+        - separator [ref=f8e57]
+        - region "Round settings" [ref=f8e58]:
+          - generic [ref=f8e59]:
+            - heading "Round settings" [level=3] [ref=f8e60]
+            - paragraph [ref=f8e61]: Set the pace once; every team plays under the same rules.
+          - generic [ref=f8e62]:
+            - group "Time per question" [ref=f8e63]:
+              - generic [ref=f8e68]:
+                - button "15s" [ref=f8e69]
+                - button "20s" [pressed] [ref=f8e70]
+                - button "30s" [ref=f8e71]
+                - button "None" [ref=f8e72]
+            - group "Questions per team" [ref=f8e73]:
+              - generic [ref=f8e79]:
+                - button "10" [ref=f8e80]
+                - button "15" [pressed] [ref=f8e81]
+                - button "20" [ref=f8e82]
+          - generic [ref=f8e89]:
+            - paragraph [ref=f8e90]: Turn-based hotseat
+            - paragraph [ref=f8e91]: Teams pass the screen in order after every answer.
+        - button "Start game" [ref=f8e92] [cursor=pointer]

@@ -189,14 +189,14 @@ export const ResumePreviewModal: React.FC<ResumePreviewModalProps> = ({
                   type="button"
                   onClick={() => setSelectedTeamId(team.id)}
                   aria-pressed={isSelected}
-                  className={`flex min-h-10 shrink-0 items-center gap-2 rounded-[8px] border px-3 text-xs font-bold transition-colors ${
+                  className={`flex min-h-10 shrink-0 items-center gap-2 rounded-[8px] border px-3 text-xs font-bold transition-colors whitespace-nowrap ${
                     isSelected
                       ? 'border-brand-700 bg-brand-700 text-white'
                       : 'border-line bg-paper-raised text-ink-soft hover:border-brand-200 hover:bg-brand-50 hover:text-brand-800'
                   }`}
                 >
-                  <span>{team.name}</span>
-                  <span className={`tabular-nums ${isSelected ? 'text-brand-100' : 'text-ink-soft'}`}>{team.score} pts</span>
+                  <span className="truncate max-w-[80px]">{team.name}</span>
+                  <span className={`tabular-nums shrink-0 ${isSelected ? 'text-brand-100' : 'text-ink-soft'}`}>{team.score} pts</span>
                 </button>
               );
             })}

@@ -1,0 +1,71 @@
+- main [ref=f14e5]:
+  - generic [ref=f14e310]:
+    - generic [ref=f14e311]:
+      - generic [ref=f14e312]:
+        - paragraph [ref=f14e313]: Final results
+        - heading "Career Craft takes the lead." [level=1] [ref=f14e314]
+        - paragraph [ref=f14e315]: The final standings combine quiz accuracy, answer streaks, and the resume components each team unlocked.
+      - generic [ref=f14e316]:
+        - button "Review question key" [active] [ref=f14e317] [cursor=pointer]
+        - button "New tournament" [ref=f14e321] [cursor=pointer]
+    - generic [ref=f14e326]:
+      - generic [ref=f14e327]:
+        - generic [ref=f14e328]: Tournament winner
+        - heading "Career Craft" [level=2] [ref=f14e335]
+        - paragraph [ref=f14e336]: Ready for senior and leadership applications.
+      - generic [ref=f14e337]:
+        - generic [ref=f14e338]:
+          - term [ref=f14e339]: Score
+          - definition [ref=f14e340]: "4445"
+        - generic [ref=f14e341]:
+          - term [ref=f14e342]: Accuracy
+          - definition [ref=f14e343]: 100%
+        - generic [ref=f14e344]:
+          - term [ref=f14e345]: Unlocked
+          - definition [ref=f14e346]: "2"
+    - tablist "Result views" [ref=f14e347]:
+      - generic [ref=f14e348]:
+        - tab "Standings" [selected] [ref=f14e349]
+        - tab "Resume drafts" [ref=f14e356]
+    - tabpanel "Standings" [ref=f14e360]:
+      - generic [ref=f14e361]:
+        - generic [ref=f14e362]:
+          - generic [ref=f14e363]: Rank
+          - generic [ref=f14e364]: Team
+          - generic [ref=f14e365]: Tier
+          - generic [ref=f14e366]: Accuracy
+          - generic [ref=f14e367]: Score
+        - article [ref=f14e368]:
+          - generic [ref=f14e369]: "#01"
+          - generic [ref=f14e371]:
+            - generic [ref=f14e372]: C
+            - generic [ref=f14e373]:
+              - heading "Career Craft" [level=3] [ref=f14e374]
+              - paragraph [ref=f14e375]: 15/15 correct · max streak 15
+          - generic [ref=f14e376]: S-tier
+          - generic [ref=f14e378]: 100%
+          - generic [ref=f14e379]:
+            - generic [ref=f14e380]: "4445"
+            - button "View Career Craft's resume draft" [ref=f14e381] [cursor=pointer]: Resume
+        - article [ref=f14e385]:
+          - generic [ref=f14e386]: "#02"
+          - generic [ref=f14e388]:
+            - generic [ref=f14e389]: R
+            - generic [ref=f14e390]:
+              - heading "Resume Mavericks" [level=3] [ref=f14e391]
+              - paragraph [ref=f14e392]: 15/15 correct · max streak 15
+          - generic [ref=f14e393]: S-tier
+          - generic [ref=f14e395]: 100%
+          - generic [ref=f14e396]:
+            - generic [ref=f14e397]: "3885"
+            - button "View Resume Mavericks's resume draft" [ref=f14e398] [cursor=pointer]: Resume
+      - generic [ref=f14e402]:
+        - generic [ref=f14e407]:
+          - paragraph [ref=f14e408]: Accuracy drives the tier
+          - paragraph [ref=f14e409]: Tier reflects correct answers as a share of questions attempted.
+        - generic [ref=f14e413]:
+          - paragraph [ref=f14e414]: Streaks add momentum
+          - paragraph [ref=f14e415]: Consecutive correct answers add a score bonus after the first.
+    - generic [ref=f14e416]:
+      - paragraph [ref=f14e417]: Export the standings for your team recap, training session, or next round.
+      - button "Export results (CSV)" [ref=f14e418] [cursor=pointer]

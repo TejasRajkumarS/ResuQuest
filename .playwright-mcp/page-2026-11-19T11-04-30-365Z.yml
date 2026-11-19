@@ -1,0 +1,268 @@
+- generic [ref=f14e3]:
+  - main [ref=f14e5]:
+    - generic [ref=f14e310]:
+      - generic [ref=f14e311]:
+        - generic [ref=f14e312]:
+          - paragraph [ref=f14e313]: Final results
+          - heading "Career Craft takes the lead." [level=1] [ref=f14e314]
+          - paragraph [ref=f14e315]: The final standings combine quiz accuracy, answer streaks, and the resume components each team unlocked.
+        - generic [ref=f14e316]:
+          - button "Review question key" [ref=f14e317] [cursor=pointer]
+          - button "New tournament" [ref=f14e321] [cursor=pointer]
+      - generic [ref=f14e326]:
+        - generic [ref=f14e327]:
+          - generic [ref=f14e328]: Tournament winner
+          - heading "Career Craft" [level=2] [ref=f14e335]
+          - paragraph [ref=f14e336]: Ready for senior and leadership applications.
+        - generic [ref=f14e337]:
+          - generic [ref=f14e338]:
+            - term [ref=f14e339]: Score
+            - definition [ref=f14e340]: "4445"
+          - generic [ref=f14e341]:
+            - term [ref=f14e342]: Accuracy
+            - definition [ref=f14e343]: 100%
+          - generic [ref=f14e344]:
+            - term [ref=f14e345]: Unlocked
+            - definition [ref=f14e346]: "2"
+      - tablist "Result views" [ref=f14e347]:
+        - generic [ref=f14e348]:
+          - tab "Standings" [selected] [ref=f14e349]
+          - tab "Resume drafts" [ref=f14e356]
+      - tabpanel "Standings" [ref=f14e360]:
+        - generic [ref=f14e361]:
+          - article [ref=f14e368]:
+            - generic [ref=f14e369]:
+              - generic [ref=f14e370]: "#01"
+              - generic [ref=f14e422]: S-tier
+            - generic [ref=f14e371]:
+              - generic [ref=f14e372]: C
+              - generic [ref=f14e373]:
+                - heading "Career Craft" [level=3] [ref=f14e374]
+                - paragraph [ref=f14e375]: 15/15 correct · max streak 15
+            - generic [ref=f14e376]: S-tier
+            - generic [ref=f14e378]: 100%
+            - generic [ref=f14e379]:
+              - generic [ref=f14e380]: "4445"
+              - button "View Career Craft's resume draft" [ref=f14e381] [cursor=pointer]: Resume
+          - article [ref=f14e385]:
+            - generic [ref=f14e386]:
+              - generic [ref=f14e387]: "#02"
+              - generic [ref=f14e423]: S-tier
+            - generic [ref=f14e388]:
+              - generic [ref=f14e389]: R
+              - generic [ref=f14e390]:
+                - heading "Resume Mavericks" [level=3] [ref=f14e391]
+                - paragraph [ref=f14e392]: 15/15 correct · max streak 15
+            - generic [ref=f14e393]: S-tier
+            - generic [ref=f14e395]: 100%
+            - generic [ref=f14e396]:
+              - generic [ref=f14e397]: "3885"
+              - button "View Resume Mavericks's resume draft" [ref=f14e398] [cursor=pointer]: Resume
+        - generic [ref=f14e402]:
+          - generic [ref=f14e407]:
+            - paragraph [ref=f14e408]: Accuracy drives the tier
+            - paragraph [ref=f14e409]: Tier reflects correct answers as a share of questions attempted.
+          - generic [ref=f14e413]:
+            - paragraph [ref=f14e414]: Streaks add momentum
+            - paragraph [ref=f14e415]: Consecutive correct answers add a score bonus after the first.
+      - generic [ref=f14e416]:
+        - paragraph [ref=f14e417]: Export the standings for your team recap, training session, or next round.
+        - button "Export results (CSV)" [ref=f14e418] [cursor=pointer]
+  - dialog "Question and answer key" [ref=f14e532]:
+    - generic [ref=f14e533]:
+      - banner [ref=f14e534]:
+        - generic [ref=f14e539]:
+          - heading "Question and answer key" [level=2] [ref=f14e540]
+          - paragraph [ref=f14e541]: 30 questions used in this tournament
+        - button "Close question review" [active] [ref=f14e542] [cursor=pointer]
+      - generic [ref=f14e546]:
+        - button "All" [pressed] [ref=f14e548]
+        - button "Mistakes" [ref=f14e800]
+        - button "Action Verbs" [ref=f14e550]
+        - button "Metrics" [ref=f14e801]
+        - button "Formatting" [ref=f14e802]
+        - button "Tailoring" [ref=f14e553]
+        - button "Summary" [ref=f14e803]
+      - generic [ref=f14e556]:
+        - group [ref=f14e557]:
+          - generic "01 Mistakes to Avoid Why should you avoid sending an editable Word document (.docx) if the job posting accepts PDF?" [ref=f14e558] [cursor=pointer]:
+            - generic [ref=f14e559]: "01"
+            - generic [ref=f14e560]:
+              - generic [ref=f14e561]: Mistakes to Avoid
+              - generic [ref=f14e562]: Why should you avoid sending an editable Word document (.docx) if the job posting accepts PDF?
+        - group [ref=f14e565]:
+          - generic "02 Action Verbs Instead of \"Changed old manual systems to new software\", which bullet verb phrase is most professional?" [ref=f14e566] [cursor=pointer]:
+            - generic [ref=f14e567]: "02"
+            - generic [ref=f14e568]:
+              - generic [ref=f14e569]: Action Verbs
+              - generic [ref=f14e570]: Instead of "Changed old manual systems to new software", which bullet verb phrase is most professional?
+        - group [ref=f14e573]:
+          - generic "03 Metrics & STAR How should you present financial or scale accomplishments on a resume?" [ref=f14e574] [cursor=pointer]:
+            - generic [ref=f14e575]: "03"
+            - generic [ref=f14e576]:
+              - generic [ref=f14e577]: Metrics & STAR
+              - generic [ref=f14e578]: How should you present financial or scale accomplishments on a resume?
+        - group [ref=f14e581]:
+          - generic "04 Formatting & ATS What margin size should you maintain on a single-page professional resume?" [ref=f14e582] [cursor=pointer]:
+            - generic [ref=f14e583]: "04"
+            - generic [ref=f14e584]:
+              - generic [ref=f14e585]: Formatting & ATS
+              - generic [ref=f14e586]: What margin size should you maintain on a single-page professional resume?
+        - group [ref=f14e589]:
+          - generic "05 Metrics & STAR Which of the following metrics best demonstrates website or software performance optimization?" [ref=f14e590] [cursor=pointer]:
+            - generic [ref=f14e591]: "05"
+            - generic [ref=f14e592]:
+              - generic [ref=f14e593]: Metrics & STAR
+              - generic [ref=f14e594]: Which of the following metrics best demonstrates website or software performance optimization?
+        - group [ref=f14e597]:
+          - generic "06 Formatting & ATS Which section header naming convention is best recognized by ATS semantic parsers?" [ref=f14e598] [cursor=pointer]:
+            - generic [ref=f14e599]: "06"
+            - generic [ref=f14e600]:
+              - generic [ref=f14e601]: Formatting & ATS
+              - generic [ref=f14e602]: Which section header naming convention is best recognized by ATS semantic parsers?
+        - group [ref=f14e605]:
+          - generic "07 Action Verbs Select the verb that BEST communicates process improvement and efficiency gains on a resume:" [ref=f14e606] [cursor=pointer]:
+            - generic [ref=f14e607]: "07"
+            - generic [ref=f14e608]:
+              - generic [ref=f14e609]: Action Verbs
+              - generic [ref=f14e610]: "Select the verb that BEST communicates process improvement and efficiency gains on a resume:"
+        - group [ref=f14e613]:
+          - generic "08 Action Verbs Instead of writing \"Responsible for handling customer complaints\", which active bullet point is most effective?" [ref=f14e614] [cursor=pointer]:
+            - generic [ref=f14e615]: "08"
+            - generic [ref=f14e616]:
+              - generic [ref=f14e617]: Action Verbs
+              - generic [ref=f14e618]: Instead of writing "Responsible for handling customer complaints", which active bullet point is most effective?
+        - group [ref=f14e621]:
+          - generic "09 Metrics & STAR Which formula represents the ideal structure for a high-impact metric bullet point?" [ref=f14e622] [cursor=pointer]:
+            - generic [ref=f14e623]: "09"
+            - generic [ref=f14e624]:
+              - generic [ref=f14e625]: Metrics & STAR
+              - generic [ref=f14e626]: Which formula represents the ideal structure for a high-impact metric bullet point?
+        - group [ref=f14e629]:
+          - generic "10 Action Verbs Which active verb best highlights launching a completely brand new product initiative from scratch?" [ref=f14e630] [cursor=pointer]:
+            - generic [ref=f14e631]: "10"
+            - generic [ref=f14e632]:
+              - generic [ref=f14e633]: Action Verbs
+              - generic [ref=f14e634]: Which active verb best highlights launching a completely brand new product initiative from scratch?
+        - group [ref=f14e637]:
+          - generic "11 Formatting & ATS Which file format is safest for retaining exact design formatting while remaining ATS-parsable?" [ref=f14e638] [cursor=pointer]:
+            - generic [ref=f14e639]: "11"
+            - generic [ref=f14e640]:
+              - generic [ref=f14e641]: Formatting & ATS
+              - generic [ref=f14e642]: Which file format is safest for retaining exact design formatting while remaining ATS-parsable?
+        - group [ref=f14e645]:
+          - generic "12 Action Verbs Which action verb conveys strong financial negotiations and contract management skills?" [ref=f14e646] [cursor=pointer]:
+            - generic [ref=f14e647]: "12"
+            - generic [ref=f14e648]:
+              - generic [ref=f14e649]: Action Verbs
+              - generic [ref=f14e650]: Which action verb conveys strong financial negotiations and contract management skills?
+        - group [ref=f14e653]:
+          - generic "13 Action Verbs Which action verb conveys strict adherence to quality and defect elimination in engineering?" [ref=f14e654] [cursor=pointer]:
+            - generic [ref=f14e655]: "13"
+            - generic [ref=f14e656]:
+              - generic [ref=f14e657]: Action Verbs
+              - generic [ref=f14e658]: Which action verb conveys strict adherence to quality and defect elimination in engineering?
+        - group [ref=f14e661]:
+          - generic "14 Action Verbs Select the verb that best describes designing an educational curriculum or workshop series:" [ref=f14e662] [cursor=pointer]:
+            - generic [ref=f14e663]: "14"
+            - generic [ref=f14e664]:
+              - generic [ref=f14e665]: Action Verbs
+              - generic [ref=f14e666]: "Select the verb that best describes designing an educational curriculum or workshop series:"
+        - group [ref=f14e669]:
+          - generic "15 Metrics & STAR Which bullet point demonstrates supply chain or inventory management excellence?" [ref=f14e670] [cursor=pointer]:
+            - generic [ref=f14e671]: "15"
+            - generic [ref=f14e672]:
+              - generic [ref=f14e673]: Metrics & STAR
+              - generic [ref=f14e674]: Which bullet point demonstrates supply chain or inventory management excellence?
+        - group [ref=f14e677]:
+          - generic "16 Formatting & ATS What is the optimal color contrast rule for text vs. document background on a resume?" [ref=f14e678] [cursor=pointer]:
+            - generic [ref=f14e679]: "16"
+            - generic [ref=f14e680]:
+              - generic [ref=f14e681]: Formatting & ATS
+              - generic [ref=f14e682]: What is the optimal color contrast rule for text vs. document background on a resume?
+        - group [ref=f14e685]:
+          - generic "17 Formatting & ATS What is the problem with hyperlinking anchor text like \"Click Here\" on a printed or PDF resume?" [ref=f14e686] [cursor=pointer]:
+            - generic [ref=f14e687]: "17"
+            - generic [ref=f14e688]:
+              - generic [ref=f14e689]: Formatting & ATS
+              - generic [ref=f14e690]: What is the problem with hyperlinking anchor text like "Click Here" on a printed or PDF resume?
+        - group [ref=f14e693]:
+          - generic "18 Action Verbs Which of the following bullet points demonstrates the strongest use of active power verbs for a project management role?" [ref=f14e694] [cursor=pointer]:
+            - generic [ref=f14e695]: "18"
+            - generic [ref=f14e696]:
+              - generic [ref=f14e697]: Action Verbs
+              - generic [ref=f14e698]: Which of the following bullet points demonstrates the strongest use of active power verbs for a project management role?
+        - group [ref=f14e701]:
+          - generic "19 Formatting & ATS Why is using tables for entire resume layout alignment risky on older ATS systems?" [ref=f14e702] [cursor=pointer]:
+            - generic [ref=f14e703]: "19"
+            - generic [ref=f14e704]:
+              - generic [ref=f14e705]: Formatting & ATS
+              - generic [ref=f14e706]: Why is using tables for entire resume layout alignment risky on older ATS systems?
+        - group [ref=f14e709]:
+          - generic "20 Action Verbs Which active verb describes bringing together divergent stakeholder views into unified alignment?" [ref=f14e710] [cursor=pointer]:
+            - generic [ref=f14e711]: "20"
+            - generic [ref=f14e712]:
+              - generic [ref=f14e713]: Action Verbs
+              - generic [ref=f14e714]: Which active verb describes bringing together divergent stakeholder views into unified alignment?
+        - group [ref=f14e717]:
+          - generic "21 Metrics & STAR What is the \"Action\" part of the STAR method on a resume?" [ref=f14e718] [cursor=pointer]:
+            - generic [ref=f14e719]: "21"
+            - generic [ref=f14e720]:
+              - generic [ref=f14e721]: Metrics & STAR
+              - generic [ref=f14e722]: What is the "Action" part of the STAR method on a resume?
+        - group [ref=f14e725]:
+          - generic "22 Metrics & STAR Why is \"Reduced server deployment cost by $120,000 annually\" stronger than \"Saved money on servers\"?" [ref=f14e726] [cursor=pointer]:
+            - generic [ref=f14e727]: "22"
+            - generic [ref=f14e728]:
+              - generic [ref=f14e729]: Metrics & STAR
+              - generic [ref=f14e730]: Why is "Reduced server deployment cost by $120,000 annually" stronger than "Saved money on servers"?
+        - group [ref=f14e733]:
+          - generic "23 Action Verbs Which power verb is strongest when describing data extraction or research findings?" [ref=f14e734] [cursor=pointer]:
+            - generic [ref=f14e735]: "23"
+            - generic [ref=f14e736]:
+              - generic [ref=f14e737]: Action Verbs
+              - generic [ref=f14e738]: Which power verb is strongest when describing data extraction or research findings?
+        - group [ref=f14e741]:
+          - generic "24 Formatting & ATS What is the optimal font size and styling rule for a readable, ATS-friendly body text on a resume?" [ref=f14e742] [cursor=pointer]:
+            - generic [ref=f14e743]: "24"
+            - generic [ref=f14e744]:
+              - generic [ref=f14e745]: Formatting & ATS
+              - generic [ref=f14e746]: What is the optimal font size and styling rule for a readable, ATS-friendly body text on a resume?
+        - group [ref=f14e749]:
+          - generic "25 Tailoring What is \"Keyword Match Rate\" in ATS optimization software?" [ref=f14e750] [cursor=pointer]:
+            - generic [ref=f14e751]: "25"
+            - generic [ref=f14e752]:
+              - generic [ref=f14e753]: Tailoring
+              - generic [ref=f14e754]: What is "Keyword Match Rate" in ATS optimization software?
+        - group [ref=f14e757]:
+          - generic "26 Formatting & ATS What is line height (leading) best practice for body bullet points on a resume?" [ref=f14e758] [cursor=pointer]:
+            - generic [ref=f14e759]: "26"
+            - generic [ref=f14e760]:
+              - generic [ref=f14e761]: Formatting & ATS
+              - generic [ref=f14e762]: What is line height (leading) best practice for body bullet points on a resume?
+        - group [ref=f14e765]:
+          - generic "27 Tailoring Why is copying and pasting exact sentences from a job posting onto your resume risky?" [ref=f14e766] [cursor=pointer]:
+            - generic [ref=f14e767]: "27"
+            - generic [ref=f14e768]:
+              - generic [ref=f14e769]: Tailoring
+              - generic [ref=f14e770]: Why is copying and pasting exact sentences from a job posting onto your resume risky?
+        - group [ref=f14e773]:
+          - generic "28 Tailoring What is a \"Master Resume\" and how is it used effectively in job searching?" [ref=f14e774] [cursor=pointer]:
+            - generic [ref=f14e775]: "28"
+            - generic [ref=f14e776]:
+              - generic [ref=f14e777]: Tailoring
+              - generic [ref=f14e778]: What is a "Master Resume" and how is it used effectively in job searching?
+        - group [ref=f14e781]:
+          - generic "29 Action Verbs Instead of \"In charge of social media accounts\", which bullet point demonstrates active management?" [ref=f14e782] [cursor=pointer]:
+            - generic [ref=f14e783]: "29"
+            - generic [ref=f14e784]:
+              - generic [ref=f14e785]: Action Verbs
+              - generic [ref=f14e786]: Instead of "In charge of social media accounts", which bullet point demonstrates active management?
+        - group [ref=f14e789]:
+          - generic "30 Structure & Summary How should continuous professional development (courses, workshops) be displayed?" [ref=f14e790] [cursor=pointer]:
+            - generic [ref=f14e791]: "30"
+            - generic [ref=f14e792]:
+              - generic [ref=f14e793]: Structure & Summary
+              - generic [ref=f14e794]: How should continuous professional development (courses, workshops) be displayed?
+      - contentinfo [ref=f14e797]:
+        - button "Close review" [ref=f14e799] [cursor=pointer]

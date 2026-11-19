@@ -1,0 +1,64 @@
+- main [ref=f7e5]:
+  - generic [ref=f7e7]:
+    - complementary [ref=f7e8]:
+      - generic [ref=f7e9]:
+        - generic [ref=f7e16]:
+          - generic [ref=f7e17]: ResuQuest
+          - generic [ref=f7e18]: Resume skills tournament
+        - paragraph [ref=f7e19]: Learn it. Apply it.
+        - heading "Turn resume know-how into a team competition." [level=1] [ref=f7e20]
+        - paragraph [ref=f7e21]: Teams answer recruiter-focused questions, earn points, and build a practical resume playbook along the way.
+    - generic [ref=f7e22]:
+      - generic [ref=f7e23]:
+        - generic [ref=f7e24]:
+          - paragraph [ref=f7e25]: An unfinished game is saved
+          - paragraph [ref=f7e26]: Resume the current round or discard it and set up a new game.
+        - generic [ref=f7e27]:
+          - button "Discard" [ref=f7e28] [cursor=pointer]
+          - button "Resume game" [ref=f7e29] [cursor=pointer]
+      - generic [ref=f7e32]:
+        - generic [ref=f7e33]:
+          - paragraph [ref=f7e34]: New session
+          - heading "Game setup" [level=2] [ref=f7e35]
+          - paragraph [ref=f7e36]: Name the teams and choose the pace. You can change these for every round.
+        - button "Turn sound off" [ref=f7e37] [cursor=pointer]
+      - generic [ref=f7e42]:
+        - region "Participating teams" [ref=f7e43]:
+          - generic [ref=f7e44]:
+            - generic [ref=f7e45]:
+              - heading "Participating teams" [level=3] [ref=f7e46]
+              - paragraph [ref=f7e47]: Choose the number of teams, then give each one a name.
+            - button "Randomize names" [ref=f7e48] [cursor=pointer]
+          - generic "Number of teams" [ref=f7e54]:
+            - button "2" [pressed] [ref=f7e55]
+            - button "3" [ref=f7e56]
+            - button "4" [ref=f7e57]
+            - button "5" [ref=f7e58]
+          - generic [ref=f7e59]:
+            - generic [ref=f7e60]:
+              - generic [ref=f7e61]: Team 1
+              - textbox "Team 1" [ref=f7e62]: Career Craft
+            - generic [ref=f7e63]:
+              - generic [ref=f7e64]: Team 2
+              - textbox "Team 2" [ref=f7e65]: Resume Mavericks
+        - separator [ref=f7e66]
+        - region "Round settings" [ref=f7e67]:
+          - generic [ref=f7e68]:
+            - heading "Round settings" [level=3] [ref=f7e69]
+            - paragraph [ref=f7e70]: Set the pace once; every team plays under the same rules.
+          - generic [ref=f7e71]:
+            - group "Time per question" [ref=f7e72]:
+              - generic [ref=f7e77]:
+                - button "15s" [ref=f7e78]
+                - button "20s" [pressed] [ref=f7e79]
+                - button "30s" [ref=f7e80]
+                - button "None" [ref=f7e81]
+            - group "Questions per team" [ref=f7e82]:
+              - generic [ref=f7e88]:
+                - button "10" [ref=f7e89]
+                - button "15" [pressed] [ref=f7e90]
+                - button "20" [ref=f7e91]
+          - generic [ref=f7e98]:
+            - paragraph [ref=f7e99]: Turn-based hotseat
+            - paragraph [ref=f7e100]: Teams pass the screen in order after every answer.
+        - button "Start game" [ref=f7e101] [cursor=pointer]

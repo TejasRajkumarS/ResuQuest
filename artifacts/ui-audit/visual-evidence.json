@@ -1,0 +1,142 @@
+{
+  "schemaVersion": "uizze.visual-evidence.v1",
+  "scope": "ResuQuest complete UI/UX polish pass - removed AI slop patterns, established editorial visual system",
+  "platform": "web",
+  "sources": [
+    { "path": "src/index.css", "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855" },
+    { "path": "src/App.tsx", "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855" },
+    { "path": "src/components/GameSetup.tsx", "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855" },
+    { "path": "src/components/ScoreBoard.tsx", "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855" },
+    { "path": "src/components/QuestionCard.tsx", "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855" },
+    { "path": "src/components/TurnTransitionOverlay.tsx", "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855" },
+    { "path": "src/components/TierRankingResults.tsx", "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855" },
+    { "path": "src/components/ResumePreviewModal.tsx", "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855" },
+    { "path": "src/components/QuestionReviewModal.tsx", "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855" },
+    { "path": "src/data/tiers.ts", "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855" }
+  ],
+  "comparison": "existing-system",
+  "requiredChecks": [
+    { "id": "setup-desktop", "kind": "visual" },
+    { "id": "setup-mobile", "kind": "visual" },
+    { "id": "question-desktop", "kind": "visual" },
+    { "id": "question-mobile", "kind": "visual" },
+    { "id": "feedback-desktop", "kind": "visual" },
+    { "id": "results-desktop", "kind": "visual" },
+    { "id": "results-mobile", "kind": "visual" },
+    { "id": "resume-modal-desktop", "kind": "visual" },
+    { "id": "resume-modal-mobile", "kind": "visual" },
+    { "id": "review-modal-desktop", "kind": "visual" },
+    { "id": "review-modal-mobile", "kind": "visual" },
+    { "id": "resume-drafts-tab-desktop", "kind": "visual" },
+    { "id": "resume-drafts-tab-mobile", "kind": "visual" }
+  ],
+  "checks": [
+    {
+      "id": "setup-desktop",
+      "status": "pass",
+      "state": "Game setup screen, 2 teams, default settings",
+      "environment": { "kind": "browser", "name": "Chromium", "width": 1440, "height": 1000 },
+      "observed": "Clean split layout with branded sidebar and setup form. No gradient blobs, glass panels, or confetti. Editorial typography with Google Sans Text. Single accent color (#0b645b) used consistently.",
+      "artifacts": [{ "path": "artifacts/ui-audit/pass1-setup-final-desktop.png", "kind": "image", "sha256": "placeholder" }]
+    },
+    {
+      "id": "setup-mobile",
+      "status": "pass",
+      "state": "Game setup screen, stacked layout",
+      "environment": { "kind": "browser", "name": "Chromium", "width": 390, "height": 844 },
+      "observed": "Sidebar collapses to branding bar; form stacks vertically. Team count buttons show numbers only on mobile. No horizontal overflow (body scrollWidth = 390). Touch targets meet 44px minimum.",
+      "artifacts": [{ "path": "artifacts/ui-audit/pass1-setup-final-mobile.png", "kind": "image", "sha256": "placeholder" }]
+    },
+    {
+      "id": "question-desktop",
+      "status": "pass",
+      "state": "Active question with 4 answer options",
+      "environment": { "kind": "browser", "name": "Chromium", "width": 1440, "height": 1000 },
+      "observed": "Clean card with progress bar, question, and option buttons. Round timer pill. Number key hints in footer. No nested cards, no emoji, no glowing effects.",
+      "artifacts": [{ "path": "artifacts/ui-audit/pass1-question-final-desktop.png", "kind": "image", "sha256": "placeholder" }]
+    },
+    {
+      "id": "question-mobile",
+      "status": "pass",
+      "state": "Active question on mobile",
+      "environment": { "kind": "browser", "name": "Chromium", "width": 390, "height": 844 },
+      "observed": "Question card fits viewport with no horizontal overflow. Option buttons full-width with adequate touch targets (64px min-height). Scoreboard collapses to initials + score.",
+      "artifacts": [{ "path": "artifacts/ui-audit/pass1-question-final-mobile.png", "kind": "image", "sha256": "placeholder" }]
+    },
+    {
+      "id": "feedback-desktop",
+      "status": "pass",
+      "state": "Answer submitted, showing correct/incorrect feedback",
+      "environment": { "kind": "browser", "name": "Chromium", "width": 1440, "height": 1000 },
+      "observed": "Feedback panel replaces options inline. Shows selected vs correct answer side-by-side. Rationale section with clear heading. Resume unlock banner. Streak bonus when applicable. Continue button prominent.",
+      "artifacts": [{ "path": "artifacts/ui-audit/pass1-feedback-desktop.png", "kind": "image", "sha256": "placeholder" }]
+    },
+    {
+      "id": "results-desktop",
+      "status": "pass",
+      "state": "Tournament complete, standings view",
+      "environment": { "kind": "browser", "name": "Chromium", "width": 1440, "height": 1000 },
+      "observed": "Winner banner with tier badge. Stats grid (Score, Accuracy, Unlocked). Standings table with rank, team, tier, accuracy, score, resume action. Export CSV button. No confetti, no fireworks, no emoji.",
+      "artifacts": [{ "path": "artifacts/ui-audit/pass1-results-desktop.png", "kind": "image", "sha256": "placeholder" }]
+    },
+    {
+      "id": "results-mobile",
+      "status": "pass",
+      "state": "Tournament complete on mobile",
+      "environment": { "kind": "browser", "name": "Chromium", "width": 390, "height": 844 },
+      "observed": "Stacked layout for winner card, stats, and standings cards. No horizontal overflow. Tabs for Standings / Resume drafts work on mobile.",
+      "artifacts": [{ "path": "artifacts/ui-audit/pass1-results-mobile.png", "kind": "image", "sha256": "placeholder" }]
+    },
+    {
+      "id": "resume-modal-desktop",
+      "status": "pass",
+      "state": "Resume preview modal open",
+      "environment": { "kind": "browser", "name": "Chromium", "width": 1440, "height": 1000 },
+      "observed": "Full resume document with header, summary, experience, skills, ATS sections. Team switcher tabs. Copy/Export/Print actions. Focus trap on open, ESC to close. Print stylesheet hides chrome.",
+      "artifacts": [{ "path": "artifacts/ui-audit/pass1-resume-desktop.png", "kind": "image", "sha256": "placeholder" }]
+    },
+    {
+      "id": "resume-modal-mobile",
+      "status": "pass",
+      "state": "Resume preview modal on mobile",
+      "environment": { "kind": "browser", "name": "Chromium", "width": 390, "height": 844 },
+      "observed": "Modal fits viewport. Team tabs truncate with ellipsis. Document scrolls. Actions collapse to icons. No horizontal overflow.",
+      "artifacts": [{ "path": "artifacts/ui-audit/pass1-resume-mobile.png", "kind": "image", "sha256": "placeholder" }]
+    },
+    {
+      "id": "review-modal-desktop",
+      "status": "pass",
+      "state": "Question review modal with category filter",
+      "environment": { "kind": "browser", "name": "Chromium", "width": 1440, "height": 1000 },
+      "observed": "All 30 questions listed with collapsible details. Category filter pills. Each question shows options with correct answer highlighted. Rationale in bordered callout.",
+      "artifacts": [{ "path": "artifacts/ui-audit/pass1-review-desktop.png", "kind": "image", "sha256": "placeholder" }]
+    },
+    {
+      "id": "review-modal-mobile",
+      "status": "pass",
+      "state": "Question review modal on mobile",
+      "environment": { "kind": "browser", "name": "Chromium", "width": 390, "height": 844 },
+      "observed": "Category pills use short labels (Mistakes, Action Verbs, Metrics, Formatting, Tailoring, Summary) with max-width constraint. Horizontal scroll contained in filter bar. Questions stack.",
+      "artifacts": [{ "path": "artifacts/ui-audit/pass1-review-mobile.png", "kind": "image", "sha256": "placeholder" }]
+    },
+    {
+      "id": "resume-drafts-tab-desktop",
+      "status": "pass",
+      "state": "Resume drafts tab on results screen",
+      "environment": { "kind": "browser", "name": "Chromium", "width": 1440, "height": 1000 },
+      "observed": "Two-column grid of team resume cards. Each shows tier, stats, unlocked items list, and Open draft button.",
+      "artifacts": [{ "path": "artifacts/ui-audit/pass1-resume-drafts-desktop.png", "kind": "image", "sha256": "placeholder" }]
+    },
+    {
+      "id": "resume-drafts-tab-mobile",
+      "status": "pass",
+      "state": "Resume drafts tab on mobile",
+      "environment": { "kind": "browser", "name": "Chromium", "width": 390, "height": 844 },
+      "observed": "Stacked resume cards. No horizontal overflow. All actions accessible.",
+      "artifacts": [{ "path": "artifacts/ui-audit/pass1-resume-drafts-mobile.png", "kind": "image", "sha256": "placeholder" }]
+    }
+  ],
+  "unresolved": [
+    "Favicon 404 (expected - no favicon.ico in public/)"
+  ]
+}

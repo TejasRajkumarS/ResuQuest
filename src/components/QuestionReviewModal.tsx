@@ -77,23 +77,30 @@ export const QuestionReviewModal: React.FC<QuestionReviewModalProps> = ({
             </button>
           </header>
 
-          <div className="no-scrollbar flex shrink-0 items-center gap-2 overflow-x-auto border-b border-line bg-white px-4 py-3 sm:px-6">
-            <span className="mr-1 shrink-0 text-[0.65rem] font-extrabold uppercase tracking-[0.09em] text-ink-soft">Filter</span>
+          <div className="no-scrollbar flex shrink-0 items-center gap-2 overflow-x-auto border-b border-line bg-white px-4 py-3 sm:px-6 max-w-full w-full">
+            <span className="mr-1 shrink-0 text-[0.65rem] font-extrabold uppercase tracking-[0.09em] text-ink-soft hidden sm:inline">Filter</span>
             {categories.map((category) => {
               const isSelected = selectedCategory === category;
+              const shortLabel = category === 'All' ? 'All'
+                : category === 'Mistakes to Avoid' ? 'Mistakes'
+                : category === 'Action Verbs' ? 'Action Verbs'
+                : category === 'Metrics & STAR' ? 'Metrics'
+                : category === 'Formatting & ATS' ? 'Formatting'
+                : category === 'Tailoring' ? 'Tailoring'
+                : 'Summary';
               return (
                 <button
                   key={category}
                   type="button"
                   onClick={() => setSelectedCategory(category)}
                   aria-pressed={isSelected}
-                  className={`min-h-9 shrink-0 rounded-[7px] border px-3 text-xs font-bold transition-colors ${
+                  className={`min-h-9 shrink-0 rounded-[7px] border px-2 text-xs font-bold transition-colors whitespace-nowrap max-w-[120px] ${
                     isSelected
                       ? 'border-brand-700 bg-brand-700 text-white'
                       : 'border-line bg-paper-raised text-ink-soft hover:border-brand-200 hover:bg-brand-50 hover:text-brand-800'
                   }`}
                 >
-                  {category}
+                  {shortLabel}
                 </button>
               );
             })}

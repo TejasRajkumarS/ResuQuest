@@ -1,0 +1,57 @@
+- generic [ref=f8e3]:
+  - generic [ref=f8e4]:
+    - banner [ref=f8e97]:
+      - generic [ref=f8e98]:
+        - generic [ref=f8e99]:
+          - generic [ref=f8e100]:
+            - generic [ref=f8e101]: RQ
+            - generic [ref=f8e102]:
+              - paragraph [ref=f8e103]: ResuQuest
+              - paragraph [ref=f8e104]: Round 1 of 15
+          - generic [ref=f8e105]:
+            - button "Turn sound off" [ref=f8e106] [cursor=pointer]
+            - button "End game and return to setup" [ref=f8e111] [cursor=pointer]
+        - list [ref=f8e115]:
+          - button "View Career Craft's resume draft. Score 0." [ref=f8e116]:
+            - generic [aria-hidden] [ref=f8e117]: C
+            - generic [ref=f8e118]: "0"
+          - button "View Resume Mavericks's resume draft. Score 0." [ref=f8e122]:
+            - generic [aria-hidden] [ref=f8e123]: R
+            - generic [ref=f8e124]: "0"
+    - main [ref=f8e5]:
+      - generic [ref=f8e129]:
+        - generic [ref=f8e130]:
+          - generic [ref=f8e131]:
+            - generic [ref=f8e132]: C
+            - generic [ref=f8e133]:
+              - paragraph [ref=f8e134]: Career Craft
+              - paragraph [ref=f8e135]: Action Verbs
+          - timer [ref=f8e136]:
+            - generic [ref=f8e140]: 18 seconds left
+        - generic [ref=f8e143]:
+          - generic [ref=f8e144]:
+            - paragraph [ref=f8e145]: Round 1 of 15
+            - heading "What is the weakness of starting bullet points with phrase \"Worked on\"?" [level=1] [ref=f8e146]
+          - group "Answer choices" [ref=f8e148]:
+            - generic [ref=f8e150]:
+              - button "It sounds too technical for non-tech roles." [ref=f8e151]:
+                - generic [aria-hidden] [ref=f8e152]: A
+              - button "It takes up too many letters." [ref=f8e154]:
+                - generic [aria-hidden] [ref=f8e155]: B
+              - button "It is forbidden by grammar rules." [ref=f8e157]:
+                - generic [aria-hidden] [ref=f8e158]: C
+              - button "It is vague and fails to convey your specific degree of ownership or final outcome." [ref=f8e160]:
+                - generic [aria-hidden] [ref=f8e161]: D
+          - generic [ref=f8e163]: Use number keys or A–D to answer.
+  - dialog "Career Craft" [ref=f8e165]:
+    - generic [ref=f8e166]:
+      - generic [ref=f8e167]: Team 1 of 2
+      - paragraph [ref=f8e174]: Pass the screen to
+      - heading "Career Craft" [level=2] [ref=f8e175]
+      - paragraph [ref=f8e176]: Round 1 of 15 is ready. The timer starts when the next team begins.
+      - generic [ref=f8e177]:
+        - generic [ref=f8e178]:
+          - paragraph [ref=f8e179]: Current score
+          - paragraph [ref=f8e180]: 0 points
+        - button "Begin turn" [ref=f8e181] [cursor=pointer]
+      - paragraph [ref=f8e184]: Press Space or Enter to continue
